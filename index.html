@@ -16,6 +16,7 @@
       <a id="current" href="#" disabled="disabled">About Me</a>
       <a class="" href="#">Java</a>
       <a href="#">Python</a>
+      <a href="#">SQL</a>
       <a href="#">HTML</a>
       <a href="#">C/C++</a>
       <a href="#">Others</a>
@@ -50,7 +51,27 @@
       </div>
     </div>
 
+   <button onclick="goBackToTop()" id="topButton" title="Go back to top">Go to Top</button>
 
+   <script>
+
+        window.onscroll = function() {showTopButton()};
+
+        function showTopButton() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("topButton").style.display = "block";
+            } else {
+                document.getElementById("topButton").style.display = "none";
+            }
+        }
+
+
+        function goBackToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+        
     <div class="footer">
       <h2>Footer</h2>
     </div>
