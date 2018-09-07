@@ -40,12 +40,16 @@ body {
     cursor: default;
 }
 
-
 .navbar a:hover {
-    background-color: #58ca2c;
-    color: #c32699;
+  background-color: #3283b3;
+  color: #9ee0bf;
 }
 
+#current :hover{
+    background-color: red;
+    color: white;
+    cursor: default;
+}
 
 .row {
     display: flex;
@@ -55,14 +59,14 @@ body {
 
 .side {
     flex: 7%;
-    background-color: #f1f1f1;
+    background-color: #7f2a2a;
     padding: 20px;
 }
 
 
 .main {
     flex: 70%;
-    background-color: white;
+    background-color: #8cbf39;
     padding: 20px;
 }
 
@@ -97,7 +101,7 @@ body {
 .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background: #3794a2;
 }
 
 
