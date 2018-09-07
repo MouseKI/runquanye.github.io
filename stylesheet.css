@@ -15,12 +15,15 @@ body {
 
 
 .header {
-    padding: 60px;
+    padding: 30px;
     text-align: center;
     background: #1abc9c;
     color: white;
 }
 
+#pageTitle{
+  font-size: 60px;
+}
 
 .navbar {
     display: flex;
@@ -72,6 +75,7 @@ body {
 
 
 .myselfimg {
+    margin-left: 16px;
     background-color: #aaa;
     width: fit-content;
     padding: 3%;
