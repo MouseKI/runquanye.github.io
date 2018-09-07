@@ -2,13 +2,18 @@
     box-sizing: border-box;
 }
 
-/* Style the body */
+
 body {
     font-family: Arial;
     margin: 0;
 }
 
-/* Header/logo Title */
+.TopContainer{
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+
 .header {
     padding: 60px;
     text-align: center;
@@ -16,13 +21,13 @@ body {
     color: white;
 }
 
-/* Style the top navigation bar */
+
 .navbar {
     display: flex;
     background-color: #333;
 }
 
-/* Style the navigation bar links */
+
 .navbar a {
     color: white;
     padding: 14px 20px;
@@ -30,38 +35,31 @@ body {
     text-align: center;
 }
 
-/*
-.navbar a :hover {
-    background-color: greenyellow;
-}
-*/
-
 #current{
     background-color: red;
     cursor: default;
 }
 
-/* Change color on hover */
+
 .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #58ca2c;
+    color: #c32699;
 }
 
-/* Column container */
-.row {  
+
+.row {
     display: flex;
     flex-wrap: wrap;
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
+
 .side {
     flex: 7%;
     background-color: #f1f1f1;
     padding: 20px;
 }
 
-/* Main column */
+
 .main {
     flex: 70%;
     background-color: white;
@@ -95,16 +93,16 @@ body {
   background-color: #555;
 }
 
-/* Footer */
+
 .footer {
     padding: 20px;
     text-align: center;
     background: #ddd;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
 @media (max-width: 700px) {
-    .row, .navbar {   
+    .row, .navbar {
         flex-direction: column;
     }
 }

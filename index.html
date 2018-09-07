@@ -1,84 +1,79 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <title>About Me</title>
     </head>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <body>
-
-
-    <div class="header">
-      <h1>The Code Fighter</h1>
-    </div>
-
-
-    <div class="navbar">
-      <a id="current" href="#" disabled="disabled">About Me</a>
-      <a class="" href="#">Java</a>
-      <a href="">Python</a>
-      <a href="">SQL</a>
-      <a href="">HTML</a>
-      <a href="">C/C++</a>
-      <a href="">Others</a>
-    </div>
-
-
-    <div class="row">
-      <div class="side">
-          <h2>About Me</h2>
-          
-          <div class="myselfimg" >
-            <img src="Source/runquanYe.jpg" alt="Picture of myself" width=250 height=250/>
-          </div>
-
-          <p><b>Name:</b> Runquan Ye</p>
-          <p><b>Age:</b> 21</p>
-          <p><b>University:</b> Grand Valley State University</p>
-          <p><b>Major:</b> Computer Science</p>
-          <p><b>Degree:</b> Undergraduate, Class of 2020</p>
-          <p><b>Language:</b> Mandarin, Cantonese, English</p>
-          
-          
+      <div class="TopContainer">
+        <div class="header">
+          <h1>The Code Fighter</h1>
+        </div>
+        <div class="navbar">
+          <a id="current" href="#" disabled="disabled">About Me</a>
+          <a class="" href="#">Java</a>
+          <a href="">Python</a>
+          <a href="">SQL</a>
+          <a href="">HTML</a>
+          <a href="">C/C++</a>
+          <a href="">Others</a>
+        </div>
       </div>
-      <div class="main">
-          <h2>TITLE HEADING</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-          <br>
-          <h2>TITLE HEADING</h2>
-          <h5>Title description, Sep 2, 2017</h5>
-          <div class="fakeimg" style="height:200px;">Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+      <div class="row">
+        <div class="side">
+            <h2>About Me</h2>
+
+            <div class="myselfimg" >
+              <img src="Source/runquanYe.jpg" alt="Picture of myself" width=250 height=250/>
+            </div>
+
+            <p><b>Name:</b> Runquan Ye</p>
+            <p><b>Age:</b> 21</p>
+            <p><b>University:</b> Grand Valley State University</p>
+            <p><b>Major:</b> Computer Science</p>
+            <p><b>Degree:</b> Undergraduate, Class of 2020</p>
+            <p><b>Language:</b> Mandarin, Cantonese, English</p>
+
+
+        </div>
+        <div class="main">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <br>
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Sep 2, 2017</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
       </div>
-    </div>
 
-   <button onclick="goBackToTop()" id="topButton" title="Go back to top">Go Sto Top</button>
+     <button onclick="goBackToTop()" id="topButton" title="Go back to top">Go Sto Top</button>
 
-   <script>
-
-        window.onscroll = function() {showTopButton()};
-
-        function showTopButton() {
-            if (document.body.scrollTop > 270 || document.documentElement.scrollTop > 270) {
-                document.getElementById("topButton").style.display = "block";
-            } else {
-                document.getElementById("topButton").style.display = "none";
-            }
-        }
-
-
-        function goBackToTop() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-        
-    <div class="footer">
-      <h2>Footer</h2>
-    </div>
-
+      <div class="footer">
+        <h2>Footer</h2>
+      </div>
     </body>
+    <script>
+
+         window.onscroll = function() {showTopButton()};
+
+         function showTopButton() {
+             if (document.body.scrollTop > 270 || document.documentElement.scrollTop > 270) {
+                 document.getElementById("topButton").style.display = "block";
+             } else {
+                 document.getElementById("topButton").style.display = "none";
+             }
+         }
+
+
+         function goBackToTop() {
+             document.body.scrollTop = 0;
+             document.documentElement.scrollTop = 0;
+         }
+     </script>
 </html>
