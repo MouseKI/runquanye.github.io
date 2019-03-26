@@ -2,23 +2,21 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
-        <embed name="Fade-Alan Walker" src="Source/Fade-Alan_Walker.mp3" loop="true" hidden="true" autostart="true">
+<!--        <embed name="Fade-Alan Walker" src="Source/Fade-Alan_Walker.mp3" loop="true" hidden="true" autostart="true">-->
         <title>Runquan Ye's Profile</title>
     </head>
 
     <body>
       <div class="TopContainer">
         <div class="header">
-          <p id="pageTitle">The Code Fighter</p>
+          <p id="pageTitle">About Me</p>
         </div>
-        <div class="navbar">
-          <a id="current" href="#" disabled="disabled">About Me</a>
-          <a class="" href="#">Java</a>
+        <div id="navbar">
+          <a href="#">Java</a>
           <a href="">Python</a>
           <a href="">SQL</a>
-          <a href="">HTML</a>
+          <a href="">JavaScript</a>
           <a href="">C/C++</a>
-          <a href="">Others</a>
         </div>
       </div>
 
@@ -41,7 +39,7 @@
                 <ul>
                   <li>SQL, json</li>
                   <li>Java, Python, C, C++</li>
-                  <li>HTML, JavaScript, Shopify liquid, ajax</li>
+                  <li>HTML, JavaScript, CSS</li>
                 </ul>
             </p>
             <p><b>Hobbies:</b>
@@ -79,9 +77,21 @@
     </body>
     <script>
 
-         window.onscroll = function() {showTopButton()};
+//         window.onscroll = function() {showTopButton()};
+        window.onscroll = function() {stickyNavbar(); showTopButton();};
 
-         function showTopButton() {
+        let navbar = document.getElementById("navbar");
+        let sticky = navbar.offsetTop;
+
+        function stickyNavbar() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        
+        function showTopButton() {
              if (document.body.scrollTop > 270 || document.documentElement.scrollTop > 270) {
                  document.getElementById("topButton").style.display = "block";
              } else {
