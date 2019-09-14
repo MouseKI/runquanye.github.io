@@ -21,6 +21,16 @@
     font: 14px Times New Roman, sans-serif; 
   }
 
+  h1{
+    text-shadow: 5px 5px 6px #000000;
+  }
+
+  .caseTitle{
+    position: relative;
+    top: -0.7em;
+    left: 0.5em;
+}
+
   html, body {
     height: 100%;
     margin: 0;
@@ -33,7 +43,7 @@
 #header h1{
     text-align: center;
     color: white;
-    font: 65px Times New Roman, sans-serif;
+    font: 4.5em Times New Roman, sans-serif;
 }
 
   .menuItem{
@@ -75,9 +85,28 @@
   }
 
   #main{
+      padding: 0.8em;
+      padding-top:1em;
     position: relative;
+    display: grid;
+    grid-template-rows: repeat(auto,8);
+    grid-row-gap: 1em;
     background: #FF7438;
   }
+
+  .showcase{
+      display: flex;
+      flex-direction: row;
+      background: hsl(196, 90%, 84%);
+      border: 0.03em solid blue;
+      border-radius: 0.5em;
+  }
+  
+/* #showcaseContainer{
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 5em;
+} */
 
   #footer{
     grid-column-start: 1;
